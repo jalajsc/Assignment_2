@@ -1,5 +1,5 @@
 Simplifii Assignment 2--
-This assignment helped to understand Routing better and Api calling.
+This assignment helped me to understand Routing better and Api calling.
 
 
 Name-Jalaj

@@ -15,7 +15,7 @@ function StoreData(){
     const [State, setState] = useState([])
     const Add = async () =>{
         let item = {name,phone,email,country,age,dob,address}
-        let result = await fetch('http://mockrestapi.herokuapp.com/api/employee',{
+        let result = await fetch('https://mockrestapi.herokuapp.com/api/employee',{
             method:'POST',
             headers:{
                 "Content-Type":"application/json",

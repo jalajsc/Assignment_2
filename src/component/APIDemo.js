@@ -9,7 +9,7 @@ function APIDemo()
     const navigate=useNavigate();
 
     const fetchUsers = async () =>{
-        let result = await axios.get("http://mockrestapi.herokuapp.com/api/employee?pageNo=1&limit=5")
+        let result = await axios.get("https://mockrestapi.herokuapp.com/api/employee?pageNo=1&limit=5")
         setData(result.data.data)
         console.warn(result.data.data)
     }
@@ -19,7 +19,7 @@ function APIDemo()
     },[])
 
     const handleDelete = async (e) => {
-                    let Delete = await axios.delete('http://mockrestapi.herokuapp.com/api/employee/'+e) 
+                    let Delete = await axios.delete('https://mockrestapi.herokuapp.com/api/employee/'+e) 
                     .then(response =>{
                         if(response.data != null){
                             alert("delete successfull..")

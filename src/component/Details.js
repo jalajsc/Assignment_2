@@ -28,7 +28,7 @@ function Details(){
                 <div>DOB: {Details.dob}</div>
                 <div>Phone: {Details.phone}</div>
                 <div>About: {Details.about}</div>
-            </div>:"Loading.."}
+            </div>:"Loading..   "}
         </div>
     )
 }

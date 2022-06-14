@@ -1,3 +1,4 @@
+/* Header */
 .Header-ul{
   margin-top: 0%;
   background-color: #61dafb;
@@ -20,19 +21,24 @@
 .Header-ul li:hover{
   background-color: #282c34;
 }
+/*  */
 
+/* ApiDemo */
 .tb tr {
   border-style: solid;
   border-width: 10;
   border-color: black;
 }
 
-.th{
+.Demo th{
   border-bottom: 2px black;
-
+  background-image: linear-gradient(grey,white);
+  padding:10px;
 }
+
+
 .Demo{
-  width: 100%;
+  width: 1000px;
   height: 10vh;
   display:block;
   justify-content: center;
@@ -41,16 +47,24 @@
 
 .Demo Table{
   border: 2px solid forestgreen;
-  width: 800px;
-  height: 100px;
+  width: 1500px;
+  height: 200px;
+  background-image: linear-gradient(white,grey);
 }
 
 .Demo button{
   padding:10px;
   width:80px;
-  margin-right: 20px;
-  position: sticky;
-  background-image: linear-gradient(rgb(162, 138, 138),Grey);
+  margin-right: 2px;
+  position: relative;
+  background-image: linear-gradient(rgb(255, 221, 237),rgb(255, 75, 75));
+  border-radius: 5px;
+}
+
+.Demo button:hover{
+  background-image: linear-gradient(rgb(255, 25, 25),rgb(255, 157, 157));
+  border-radius: 10px;
+  cursor: pointer;
 }
 .Demo th{
   border-bottom: 3px solid black;
@@ -58,8 +72,40 @@
 
 .Demo td{
   text-align: center;
-  background-image: linear-gradient(White,Grey);
+  background-image: linear-gradient(White,rgb(255, 255, 255));
 }
+.Pagination{
+  margin-top: 0px;
+  margin-left: 100px;
+}
+.Pagination ul li{
+  display: inline-block;
+  padding: 7px;
+  padding-right: 20px;
+  background-image: linear-gradient(#61dafb,white);
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin:1px;
+}
+.Pagination ul li:hover{
+  cursor: pointer;
+  font-size: 80%;
+}
+
+#PaginationP{
+  margin-right: 5px;
+  display: inline-block;
+  background-image: linear-gradient(white,white);
+  color: Red;
+  border: 0px;
+}
+#PaginationP:hover{
+  font-size: 100%;
+  cursor:text;
+}
+/*  */
+
+/* Add */
 
 .inputD{
   width: 100%;
@@ -110,3 +156,9 @@
   align-items: center;
 
 }
+
+/* Home */
+.Home{
+  text-align: center;
+}
+

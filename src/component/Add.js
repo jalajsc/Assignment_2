@@ -22,8 +22,10 @@ function StoreData(){
                 "Accept":"application/json",
             },
             body: JSON.stringify(item)
+            
         });
         result = await result.json();
+        alert("Employee has been added.");
         console.warn("result",result);
     }
 
@@ -32,11 +34,11 @@ function StoreData(){
         <div className="AddData">
             <h1>Store Data </h1>
             <div className="Box">Name:<input className="inputD" type="text" value={name} onChange={(e)=>setname(e.target.value)} placeholder="Enter Name" /></div>
-            <div className="Box">Phone Number: <input className="inputD" type="text" value={phone} onChange={(e)=>setphone(e.target.value)} placeholder="Enter Phone" /></div>
+            <div className="Box">Phone Number: <input maxlength="10" className="inputD" type="mobile" value={phone} onChange={(e)=>setphone(e.target.value)} placeholder="Enter Phone" /></div>
             <div className="Box">Email: <input className="inputD" type="text" value={email} onChange={(e)=>setemail(e.target.value)} placeholder="Enter Email" /></div>
             <div className="Box">Country: <input className="inputD" type="text" value={country} onChange={(e)=>setcountry(e.target.value)} placeholder="Enter Country" /></div>
             <div className="Box">Age: <input className="inputD" type="text" value={age} onChange={(e)=>setage(e.target.value)} placeholder="Enter Age" /></div>
-            <div className="Box">DOB: <input className="inputD" type="text" value={dob} onChange={(e)=>setdob(e.target.value)} placeholder="Enter Date of birth" /></div>
+            <div className="Box">DOB: <input className="inputD" type="date" value={dob} onChange={(e)=>setdob(e.target.value)} placeholder="Enter Date of birth" /></div>
             <div className="Box">Address: <input className="inputD" type="text" value={address} onChange={(e)=>setaddress(e.target.value)} placeholder="Enter Address" /></div>
             <button onClick={Add} className="button">Add</button>
         </div>
